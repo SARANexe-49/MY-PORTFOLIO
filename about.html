@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saran Vivek.site - About</title>
+  <style>
+    :root {
+      --bg: #1e1e1e;
+      --text: #f0f0f0;
+      --muted: #aaa;
+      --accent: #ccc;
+      --header-bg: #111;
+      --card-bg: #2a2a2a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--header-bg);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    #profile-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      object-fit: cover;
+      margin: 40px auto 20px;
+      display: block;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--header-bg);
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 60px;
+      border-top: 1px solid #333;
+    }
+    .footer-icons img {
+      width: 36px;
+      height: 36px;
+      margin: 0 10px;
+      vertical-align: middle;
+      object-fit: contain;
+      filter: brightness(1.5);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Saran Vivek S V</div>
+    <nav>
+      
+      <a href="./about.html">ABOUT</a>
+      <a href="./skills.html">MY SKILLS</a>
+      <a href="./projects.html">PROJECTS</a>
+      <a href="./certificates.html">CERTIFICATES</a>
+      <a href="./contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <img src="saran.jpeg" alt="Saran's Photo" id="profile-photo" />
+
+  <main>
+    <h2>Hello, I'm Saran Vivek S V</h2>
+    <p>Front-end developer passionate about crafting clean and modern websites.</p>
+  </main>
+
+  <footer>
+    <p>© 2025 Saran Vivek S V Portfolio</p>
+    &copy; 2025 Saran Vivek.site | Contact: +91 73395 17467
+    <br>
+    <div class="footer-icons">
+    <p>
+      <br>
+      <a href="https://www.linkedin.com/in/ashwin-s-650b48329" target="_blank"><img src="./icons8-linkedin.gif" alt=""></a>
+      <a href="https://github.com/ASHWIN07026" target="_blank"><img src="./icons8-github.gif" alt=""></a>
+      <a href="mailto:aa4674904@gmail.com"><img src="icons8-email.gif" alt=""></a>
+      <a href="#"><img src="icons8-twitter-bird.gif" alt=""></a>
+      
+    </p>
+    </div>
+  </footer>
+
+</body>
+</html>

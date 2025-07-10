@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MySkills - Saran Vivek S V Portfolio</title>
+  <style>
+    :root {
+      --bg: #1e1e1e;
+      --text: #f0f0f0;
+      --muted: #aaa;
+      --accent: #ccc;
+      --header-bg: #111;
+      --card-bg: #2a2a2a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--header-bg);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 40px;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-list li {
+      background: var(--card-bg);
+      border: 1px solid #333;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .skill-logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--header-bg);
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: var(--accent);
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer img {
+      width: 25px;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Saran Vivek S V</div>
+    <nav>
+      
+      <a href="./about.html">ABOUT</a>
+      <a href="./skills.html">MY SKILLS</a>
+      <a href="./projects.html">PROJECTS</a>
+      <a href="./certificates.html">CERTIFICATES</a>
+      <a href="./contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li><img src="HTML5-logo.jpg" alt="HTML5 Logo" class="skill-logo" />HTML5</li>
+        <li><img src="CSS3logo.jpg" alt="CSS3 Logo" class="skill-logo" />CSS3</li>
+        <li><img src="JavaScript-logo.jpg" alt="JavaScript Logo" class="skill-logo" />JavaScript</li>
+        <li><img src="reactlogo.jpg" alt="React.js Logo" class="skill-logo" />React.js</li>
+        <li><img src="git.png" alt="Git & GitHub Logo" class="skill-logo" />Git & GitHub</li>
+        <li><img src="Bootstrap.jpg" alt="Bootstrap Logo" class="skill-logo" />Bootstrap</li>
+        <li><img src="pythonlogo.jpg" alt="Python Logo" class="skill-logo" />Python</li>
+        <li><img src="C-logo.jpg" alt="C Logo" class="skill-logo" />C Programming</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Saran Vivek S V Portfolio</p>
+    &copy; 2025 Saran Vivek.site | Contact: +91 73395 17467
+    <p>
+      <br>
+      <a href="https://www.linkedin.com/in/ashwin-s-650b48329" target="_blank"><img src="./icons8-linkedin.gif" alt=""></a>
+      <a href="https://github.com/ASHWIN07026" target="_blank"><img src="./icons8-github.gif" alt=""></a>
+      <a href="mailto:aa4674904@gmail.com"><img src="icons8-email.gif" alt=""></a>
+      <a href="#"><img src="icons8-twitter-bird.gif" alt=""></a>
+      
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saran Vivek.site | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #eee;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      color: #f5f5f5;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #eee;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #bbb;
+    }
+
+    main {
+      flex: 1;
+      max-width: 700px;
+      margin: 60px auto 80px;
+      padding: 0 20px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .hero img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 3px solid #555;
+      object-fit: cover;
+      margin-bottom: 25px;
+      box-shadow: 0 0 10px #222;
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #eee;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #aaa;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 8px 18px;
+      background-color: transparent;
+      border: 2px solid #eee;
+      color: #eee;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: #eee;
+      color: #121212;
+    }
+
+    section#projects {
+      margin-top: 40px;
+    }
+
+    section#projects h2 {
+      color: #eee;
+      font-size: 2rem;
+      margin-bottom: 25px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+
+    @media (min-width: 600px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .card {
+      background: #222;
+      padding: 25px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #111;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 15px #555;
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #eee;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .card h3 a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .card h3 a:hover {
+      text-decoration: underline;
+      color: #bbb;
+    }
+
+    .card p {
+      color: #aaa;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0 20px;
+      background: #111;
+      color: #666;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    .footer-icons {
+      margin-top: 15px;
+    }
+
+    .footer-icons img {
+      width: 36px;
+      height: 36px;
+      margin: 0 10px;
+      vertical-align: middle;
+      object-fit: contain;
+      filter: brightness(1.5);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        margin: 40px 15px 60px;
+      }
+
+      .hero img {
+        width: 150px;
+        height: 150px;
+        border-width: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Saran Vivek S V</div>
+    <nav>
+      <a href="./about.html">ABOUT</a>
+      <a href="./skills.html">MY SKILLS</a>
+      <a href="./projects.html">PROJECTS</a>
+      <a href="./certificates.html">CERTIFICATES</a>
+      <a href="./contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="saran.jpeg" alt="Saran's Photo" />
+      <h1>Hello, I'm Saran Vivek S V</h1>
+      <p>Web Developer | Tech Enthusiast | Innovator</p>
+      <div class="social-links">
+        <a href="https://github.com/ASHWIN07026" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ashwin-s-650b48329" target="_blank">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3><a href="https://example.com/project1" target="_blank">Portfolio Website</a></h3>
+          <p>A responsive and modern portfolio website built with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="card">
+          <h3><a href="https://example.com/project2" target="_blank">Weather App</a></h3>
+          <p>A real-time weather app using OpenWeatherMap API and React.js.</p>
+        </div>
+        <div class="card">
+          <h3><a href="https://example.com/project3" target="_blank">Task Manager</a></h3>
+          <p>A task management web app with drag-and-drop functionality and localStorage support.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Saran Vivek S V Portfolio</p>
+    <p>© 2025 Saran Vivek.site | Contact: +91 73395 17467</p>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/ashwin-s-650b48329" target="_blank"><img src="./icons8-linkedin.gif" alt="LinkedIn"></a>
+      <a href="https://github.com/ASHWIN07026" target="_blank"><img src="./icons8-github.gif" alt="GitHub"></a>
+      <a href="mailto:aa4674904@gmail.com"><img src="./icons8-email.gif" alt="Email"></a>
+      <a href="#"><img src="icons8-twitter-bird.gif" alt="Twitter"></a>
+    </div>
+  </footer>
+
+</body>
+</html>

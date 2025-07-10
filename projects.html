@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Saran Vivek.site Portfolio</title>
+  <style>
+    :root {
+      --bg: #1e1e1e;
+      --text: #f0f0f0;
+      --muted: #aaa;
+      --accent: #ccc;
+      --header-bg: #111;
+      --card-bg: #2a2a2a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--header-bg);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .projects li {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .projects li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .projects a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--header-bg);
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 60px;
+      border-top: 1px solid #333;
+    }
+
+    footer a {
+      color: var(--accent);
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .footer-icons {
+      margin-top: 10px;
+    }
+
+    .footer-icons img {
+      width: 36px;
+      height: 36px;
+      margin: 0 8px;
+      vertical-align: middle;
+      object-fit: contain;
+      filter: brightness(1.5);
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Saran Vivek S V</div>
+    <nav>
+      <a href="./about.html">ABOUT</a>
+      <a href="./skills.html">MY SKILLS</a>
+      <a href="./projects.html">PROJECTS</a>
+      <a href="./certificates.html">CERTIFICATES</a>
+      <a href="./contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Projects</h1>
+    <ul class="projects">
+      <li><a href="https://github.com/ASHWIN07026/project1" target="_blank">Portfolio Website</a></li>
+      <li><a href="https://github.com/ASHWIN07026/project2" target="_blank">ToDo App</a></li>
+      <!-- Add more projects here -->
+    </ul>
+  </main>
+
+  <footer>
+    <p>© 2025 Saran Vivek S V Portfolio</p>
+    <p>&copy; 2025 Saran Vivek.site | Contact: +91 73395 17467</p>
+    
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/ashwin-s-650b48329" target="_blank">
+        <img src="./icons8-linkedin.gif" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/ASHWIN07026" target="_blank">
+        <img src="./icons8-github.gif" alt="GitHub">
+      </a>
+      <a href="mailto:aa4674904@gmail.com">
+        <img src="./icons8-email.gif" alt="Email">
+      </a>
+      <a href="#">
+        <img src="./icons8-twitter-bird.gif" alt="Twitter">
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
