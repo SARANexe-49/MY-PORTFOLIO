@@ -60,7 +60,7 @@
 
     section {
       padding: 80px 20px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
     }
 
@@ -71,28 +71,41 @@
       font-size: 2rem;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+    .certificate-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
-    ul li {
-      background: var(--card-bg);
+    .certificate {
+      background: #292929;
       padding: 20px;
-      border-radius: 10px;
-      border: 1px solid #333;
-      text-align: center;
-      font-weight: 500;
-      color: var(--accent);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(243, 245, 244, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    ul li:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+    .certificate:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 6px 15px rgba(214, 223, 221, 0.4);
+    }
+
+    .certificate h3 {
+      color: #e9f0ee;
+      margin-bottom: 10px;
+    }
+
+    .certificate p {
+      font-weight: 300;
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .certificate img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      cursor: pointer;
     }
 
     footer {
@@ -105,22 +118,20 @@
       border-top: 1px solid #333;
     }
 
-    footer a {
-      color: var(--accent);
-      margin: 0 10px;
-      text-decoration: none;
+    .footer-icon {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
     }
-       .footer-icon img {
+
+    .footer-icon img {
       width: 36px;
       height: 36px;
-      margin: 0 10px;
-      vertical-align: middle;
       object-fit: contain;
       filter: brightness(1.5);
     }
-
-
-    
 
     @media (max-width: 768px) {
       nav {
@@ -130,7 +141,7 @@
         gap: 10px;
       }
 
-      ul {
+      .certificate-list {
         grid-template-columns: 1fr;
       }
     }
@@ -141,7 +152,7 @@
   <header>
     <div class="logo">Saran Vivek S V</div>
     <nav>
-    
+      <a href="./index.html">HOME</a>
       <a href="./about.html">ABOUT</a>
       <a href="./skills.html">MY SKILLS</a>
       <a href="./projects.html">PROJECTS</a>
@@ -150,26 +161,91 @@
     </nav>
   </header>
 
-  <section>
-    <h1>Certificates</h1>
-    <ul>
-      <li>Front-End Web Development - Coursera</li>
-      <li>JavaScript Algorithms and Data Structures - freeCodeCamp</li>
-      <li>Responsive Web Design - freeCodeCamp</li>
-      <!-- Add more certificates as needed -->
-    </ul>
-  </section>
+  <main>
+    <section>
+      <h1>My Certificates</h1>
+      <div class="certificate-list">
+
+        <!-- Certificates go here -->
+        <div class="certificate">
+          <h3>AI FOR BEGINNERS</h3>
+          <a href="Ai for beginners.jpg"><img src="Ai for beginners.jpg" alt="AI FOR BEGINNERS" /></a>
+          <p>Issued by HP - 2025</p>
+        </div>
+
+        <div class="certificate">
+          <h3>DATA ANALYTICS</h3>
+          <a href="Data Analytics.jpg"><img src="Data Analytics.jpg" alt="DATA ANALYTICS" /></a>
+          <p>Issued by HP - 2025</p>
+        </div>
+
+        <div class="certificate">
+          <h3>INTRODUCTION TO CYBERSECURITY AWARENESS</h3>
+          <a href="Introduction to cyber security.jpg"><img src="Introduction to cyber security.jpg" alt="INTRODUCTION TO CYBERSECURITY" /></a>
+          <p>Issued by HP - 2025</p>
+        </div>
+
+        <div class="certificate">
+          <h3>CHATGPT FOR EVERYONE</h3>
+          <a href="chatgpt for everyone.jpeg"><img src="chatgpt for everyone.jpeg" alt="CHATGPT FOR EVERYONE" /></a>
+          <p>Issued by GUVI AND NCL - 2025</p>
+        </div>
+
+        <div class="certificate">
+          <h3>DATA SCIENCE WITH BOOTCAMP</h3>
+          <a href="Data science with bootcamp.jpg"><img src="Data science with bootcamp.jpg" alt="DATA SCIENCE BOOTCAMP" /></a>
+          <p>Issued by LETS UPGRADE - 2025</p>
+        </div>
+
+        <div class="certificate">
+          <h3>JAVA BOOTCAMP</h3>
+          <a href="Java bootcamp.jpg"><img src="Java bootcamp.jpg" alt="JAVA BOOTCAMP" /></a>
+          <p>Issued by LETS UPGRADE - 2025</p>
+        </div>
+
+        <div class="certificate">
+          <h3>SQL BOOTCAMP</h3>
+          <a href="SQL bootcamp.jpg"><img src="SQL bootcamp.jpg" alt="SQL BOOTCAMP" /></a>
+          <p>Issued by LETS UPGRADE - 2025</p>
+        </div>
+
+        <div class="certificate">
+          <h3>DSA WITH C++</h3>
+          <a href="Dsa with c++.jpg"><img src="Dsa with c++.jpg" alt="DSA WITH C++" /></a>
+          <p>Issued by LETS UPGRADE - 2025</p>
+        </div>
+
+        <div class="certificate">
+          <h3>EXCEL BOOTCAMP</h3>
+          <a href="Excel bootcamp.jpg"><img src="Excel bootcamp.jpg" alt="EXCEL BOOTCAMP" /></a>
+          <p>Issued by LETS UPGRADE - 2025</p>
+        </div>
+
+        <div class="certificate">
+          <h3>CANVA BOOTCAMP</h3>
+          <a href="Canva bootcamp.jpg"><img src="Canva bootcamp.jpg" alt="CANVA BOOTCAMP" /></a>
+          <p>Issued by LETS UPGRADE - 2025</p>
+        </div>
+
+        <div class="certificate">
+          <h3>JIO CINEMA REACT CLONE</h3>
+          <a href="Jio cinema react clone certificate_page-0001.jpg"><img src="Jio cinema react clone certificate_page-0001.jpg" alt="JIO CINEMA REACT CLONE" /></a>
+          <p>Issued by LETS UPGRADE - 2025</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Saran Vivek S V Portfolio</p>
     <p>&copy; 2025 Saran Vivek.site | Contact: +91 73395 17467</p>
-    <div class = "footer-icon">
-    <p>
-      <br>
-      <a href="https://www.linkedin.com/in/ashwin-s-650b48329" target="_blank"><img src="./icons8-linkedin.gif" alt=""></a>
-      <a href="https://github.com/ASHWIN07026" target="_blank"><img src="./icons8-github.gif" alt=""></a>
-      <a href="mailto:aa4674904@gmail.com"><img src="icons8-email.gif" alt=""></a>
-      <a href="#"><img src="icons8-twitter-bird.gif" alt=""></a>
+    <div class="footer-icon">
+      <a href="https://www.linkedin.com/in/saran-vivek-s-v-420a1a366" target="_blank"><img src="./icons8-linkedin.gif" alt="LinkedIn"></a>
+      <a href="https://github.com/SARANexe-49" target="_blank"><img src="./icons8-github.gif" alt="GitHub"></a>
+      <a href="mailto:svsaranvivek@gmail.com"><img src="./icons8-email.gif" alt="Email"></a>
+      <a href="https://x.com/svsaranvivek49?s=08"><img src="icons8-twitter-bird.gif" alt="Twitter"></a>
+      
       
     </p>
     </div>
