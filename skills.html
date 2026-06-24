@@ -4,139 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MySkills - Saran Vivek S V Portfolio</title>
-  <style>
-    :root {
-      --bg: #1e1e1e;
-      --text: #f0f0f0;
-      --muted: #aaa;
-      --accent: #ccc;
-      --header-bg: #111;
-      --card-bg: #2a2a2a;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--header-bg);
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid #333;
-    }
-
-    .logo {
-      font-size: 1.6rem;
-      color: var(--accent);
-      font-weight: bold;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: var(--text);
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-
-    h2 {
-      text-align: center;
-      color: var(--accent);
-      margin-bottom: 40px;
-    }
-
-    .skills-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-      list-style: none;
-      padding: 0;
-    }
-
-    .skills-list li {
-      background: var(--card-bg);
-      border: 1px solid #333;
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-      color: var(--muted);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .skill-logo {
-      width: 50px;
-      height: 50px;
-      object-fit: contain;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: var(--header-bg);
-      color: var(--muted);
-      font-size: 0.9rem;
-      border-top: 1px solid #333;
-      margin-top: 60px;
-    }
-
-    footer a {
-      color: var(--accent);
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    footer img {
-      width: 25px;
-      vertical-align: middle;
-      margin-left: 5px;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 10px;
-      }
-    }
-  </style>
+  <link rel="icon" type="image/png" href="saran.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <div id="preloader">
+    <div class="loader-mark">
+      <span>LOADING_SKILLSET</span>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <div class="bg-layer"></div>
+  <div class="grain"></div>
+
   <header>
-    <div class="logo">Saran Vivek S V</div>
-    <nav>
+    <div class="logo">
+      <span class="logo-mark">SV</span>
+      Saran Vivek S V
+    </div>
+    <nav class="primary-nav">
       <a href="./index.html">HOME</a>
       <a href="./about.html">ABOUT</a>
       <a href="./skills.html">MY SKILLS</a>
@@ -144,35 +35,68 @@
       <a href="./certificates.html">CERTIFICATES</a>
       <a href="./contact.html">CONTACT</a>
     </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
   </header>
 
   <main>
-    <section id="skills">
-      <h2>My Skills</h2>
-      <ul class="skills-list">
-        <li><img src="icons8-html5.svg" alt="HTML5 Logo" class="skill-logo" />HTML5</li>
-        <li><img src="icons8-css3.svg" alt="CSS3 Logo" class="skill-logo" />CSS3</li>
-        <li><img src="icons8-javascript.svg" alt="JavaScript Logo" class="skill-logo" />JavaScript</li>
-        <li><img src="icons8-java.svg" alt="Java logo" class="skill-logo" />Java</li>
-        <li><img src="icons8-mysql-96.png" alt="Mysql logo" class="skill-logo" />Mysql</li>
-        <li><img src="icons8-python.svg" alt="Python Logo" class="skill-logo" />Python</li>
-        <li><img src="icons8-c-programming.svg" alt="C Logo" class="skill-logo" />C Programming</li>
+    <div class="shell page-head reveal">
+      <span class="eyebrow">TOOLKIT</span>
+      <h1>My Skills</h1>
+      <p>Languages and tools I use to build, analyze, and ship.</p>
+    </div>
+
+    <section class="shell section" id="skills" style="padding-top:0;">
+      <ul class="skills-list reveal-stagger">
+        <li class="panel reveal">
+          <img src="icons8-html5.svg" alt="HTML5 Logo" class="skill-logo" />
+          HTML5
+          <span class="skill-tag">Markup</span>
+        </li>
+        <li class="panel reveal">
+          <img src="icons8-css3.svg" alt="CSS3 Logo" class="skill-logo" />
+          CSS3
+          <span class="skill-tag">Styling</span>
+        </li>
+        <li class="panel reveal">
+          <img src="icons8-javascript.svg" alt="JavaScript Logo" class="skill-logo" />
+          JavaScript
+          <span class="skill-tag">Scripting</span>
+        </li>
+        <li class="panel reveal">
+          <img src="icons8-java.svg" alt="Java logo" class="skill-logo" />
+          Java
+          <span class="skill-tag">OOP</span>
+        </li>
+        <li class="panel reveal">
+          <img src="icons8-mysql-96.png" alt="Mysql logo" class="skill-logo" />
+          Mysql
+          <span class="skill-tag">Database</span>
+        </li>
+        <li class="panel reveal">
+          <img src="icons8-python.svg" alt="Python Logo" class="skill-logo" />
+          Python
+          <span class="skill-tag">AI / ML</span>
+        </li>
+        <li class="panel reveal">
+          <img src="icons8-c-programming.svg" alt="C Logo" class="skill-logo" />
+          C Programming
+          <span class="skill-tag">Fundamentals</span>
+        </li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Saran Vivek S V Portfolio</p>
-    &copy; 2025 Saran Vivek.site | Contact: +91 73395 17467
-    <p>
-      <br>
+    <p>© 2026 Saran Vivek S V Portfolio</p>
+    <p>© 2026 Saran Vivek.site | Contact: +91 73395 17467</p>
+    <div class="footer-icons">
       <a href="https://www.linkedin.com/in/saran-vivek-s-v-420a1a366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="./icons8-linkedin.gif" alt="LinkedIn"></a>
       <a href="https://github.com/SARANexe-49" target="_blank"><img src="./icons8-github.gif" alt="GitHub"></a>
       <a href="mailto:svsaranvivek@gmail.com"><img src="./icons8-email.gif" alt="Email"></a>
       <a href="https://x.com/svsaranvivek49?s=08"><img src="icons8-twitter-bird.gif" alt="Twitter"></a>
-      
-    </p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
