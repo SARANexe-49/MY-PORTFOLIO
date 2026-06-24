@@ -4,155 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects - Saran Vivek.site Portfolio</title>
-  <style>
-    :root {
-      --bg: #1e1e1e;
-      --text: #f0f0f0;
-      --muted: #aaa;
-      --accent: #ccc;
-      --header-bg: #111;
-      --card-bg: #2a2a2a;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--header-bg);
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid #333;
-    }
-
-    .logo {
-      font-size: 1.6rem;
-      color: var(--accent);
-      font-weight: bold;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: var(--text);
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: var(--accent);
-      margin-bottom: 40px;
-      font-size: 2rem;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      list-style: none;
-      padding: 0;
-    }
-
-    .projects li {
-      background: var(--card-bg);
-      padding: 20px;
-      border-radius: 10px;
-      border: 1px solid #333;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .projects li:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-
-    .projects a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .projects a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: var(--header-bg);
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-top: 60px;
-      border-top: 1px solid #333;
-    }
-
-    footer a {
-      color: var(--accent);
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    .footer-icons {
-      margin-top: 10px;
-    }
-
-    .footer-icons img {
-      width: 36px;
-      height: 36px;
-      margin: 0 8px;
-      vertical-align: middle;
-      object-fit: contain;
-      filter: brightness(1.5);
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 10px;
-      }
-
-      .projects {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="icon" type="image/png" href="saran.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <div id="preloader">
+    <div class="loader-mark">
+      <span>LOADING_PROJECTS</span>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <div class="bg-layer"></div>
+  <div class="grain"></div>
+
   <header>
-    <div class="logo">Saran Vivek S V</div>
-    <nav>
+    <div class="logo">
+      <span class="logo-mark">SV</span>
+      Saran Vivek S V
+    </div>
+    <nav class="primary-nav">
       <a href="./index.html">HOME</a>
       <a href="./about.html">ABOUT</a>
       <a href="./skills.html">MY SKILLS</a>
@@ -160,21 +35,51 @@
       <a href="./certificates.html">CERTIFICATES</a>
       <a href="./contact.html">CONTACT</a>
     </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
   </header>
 
   <main>
-    <h1>My Projects</h1>
-    <ul class="projects">
-      <li><a href="https://github.com/ASHWIN07026/project1" target="_blank">Portfolio Website</a></li>
-      <li><a href="https://github.com/ASHWIN07026/project2" target="_blank">ToDo App</a></li>
-      <!-- Add more projects here -->
-    </ul>
+    <div class="shell page-head reveal">
+      <span class="eyebrow">BUILD LOG</span>
+      <h1>My Projects</h1>
+      <p>A running list of things I've built while learning AI, data, and the web.</p>
+    </div>
+
+    <section class="shell section" style="padding-top:0;">
+      <ul class="grid reveal-stagger" style="list-style:none; grid-template-columns: repeat(2, 1fr);">
+        <li class="card panel reveal">
+          <span class="card-index">01 — WEB</span>
+          <h3><a href="https://saranexe-49.github.io/MY-PORTFOLIO/" target="_blank">Portfolio Website</a></h3>
+        </li>
+        <li class="card panel reveal">
+          <span class="card-index">02 — CV</span>
+          <h3><a href="http://127.0.0.1:3002/index.html" target="_blank">Hand Gesture Detector</a></h3>
+        </li>
+        <li class="card panel reveal">
+          <span class="card-index">03 — AI</span>
+          <h3><a href="http://127.0.0.1:5000" target="_blank">AI ChatBot</a></h3>
+        </li>
+        <li class="card panel reveal">
+          <span class="card-index">04 — UTILITY</span>
+          <h3><a href="http://127.0.0.1:3002/index.html" target="_blank">Medicine Remainder </a></h3>
+        </li>
+        <li class="card panel reveal">
+          <span class="card-index">05 — DATA</span>
+          <h3><a href="http://127.0.0.1:3004/index.html" target="_blank"> Weather Detector </a></h3>
+        </li>
+        <li class="card panel reveal">
+          <span class="card-index">06 — AI</span>
+          <h3><a href="http://127.0.0.1:5000" target="_blank"> Resume Identifier </a></h3>
+        </li>
+        <!-- Add more projects here -->
+      </ul>
+    </section>
   </main>
 
   <footer>
     <p>© 2025 Saran Vivek S V Portfolio</p>
     <p>&copy; 2025 Saran Vivek.site | Contact: +91 73395 17467</p>
-    
+
     <div class="footer-icons">
       <a href="https://www.linkedin.com/in/saran-vivek-s-v-420a1a366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
         <img src="./icons8-linkedin.gif" alt="LinkedIn">
@@ -191,5 +96,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
